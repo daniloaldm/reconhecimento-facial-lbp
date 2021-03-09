@@ -21,7 +21,7 @@ python3 knn.py
 ```
 
 # Reconhecimento facial com LBP e NN
-Este repositório contém o código-fonte dos experimentos realizados no artigo intitulado *** "Reconhecimento facial usando padrão binário local e classificação do vizinho mais próximo" ***.[2018 International Advanced Intelligent Computing Symposium (SAIN 2018)] (http://sain.ijain.org/) em 29-30 de agosto de 2018 em Yogyakarta, Indonésia.
+Este repositório contém o código-fonte dos experimentos realizados no artigo intitulado *** "Reconhecimento facial usando padrão binário local e classificação do vizinho mais próximo"
 
 ## Estrutura do código fonte
 - ** pasta db ** Contém três conjuntos de dados usados ​​neste experimento, a saber, JAFFE, AT&T e Yale
