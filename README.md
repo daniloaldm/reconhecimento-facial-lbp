@@ -3,7 +3,7 @@
 ## Instalação e Execução
 Clone o repositório:
 ```
-git clone 
+git clone https://github.com/daniloaldm/reconhecimento-facial-lbp.git
 ```
 Vá para o diretório:
 ```
