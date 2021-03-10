@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 db = 'yale'
 data_training = 'db/%s' % db
 
-P = 8  # number of points
-R = 8  # radius
+P = 8 # número de pontos
+R = 8 # raio
 
 dataset = [file for file in paths.list_images(data_training)]
 desc = LocalBinaryPatterns(8,8)
