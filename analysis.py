@@ -1,4 +1,4 @@
-# knn analysis. Compare k values.
+# Análise knn. Comparando os valores de k.
 from matplotlib import pyplot as plt
 import pandas as pd
 
