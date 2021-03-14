@@ -20,7 +20,11 @@ Para executar:
 python3 knn.py
 ```
 
+<<<<<<< HEAD
 # Reconhecimento facial com LBP
+=======
+# Reconhecimento facial com LBP e NN
+>>>>>>> c9e687fd6a1fbcaf661cc87b8abdaacba27e2e6b
 Este repositório contém o código-fonte dos experimentos realizados no artigo intitulado *** "Reconhecimento facial usando padrão binário local e classificação do vizinho mais próximo"
 
 ## Estrutura do código fonte

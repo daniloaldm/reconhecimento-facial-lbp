@@ -1,4 +1,4 @@
-# import the necessary packages
+# importando os pacotes necessários
 import itertools
 from sklearn.model_selection import train_test_split
 from localbinarypatterns import LocalBinaryPatterns
@@ -29,15 +29,15 @@ dataset = [file for file in paths.list_images(data_training)]
 
 for p in par:
     print("##### points: %d, radius:%d #####" % p)
-    # initialize the local binary patterns descriptor
+    # inicializar o descritor de padrões binários locais
     desc = LocalBinaryPatterns(p[0], p[1])
     data = []
     labels = []
 
-    # loop over the training images
+    # loop nas imagens de treinamento
     print(data_training, len(dataset))
     for imagePath in paths.list_images(data_training):
-        # load the image, convert it to grayscale, and describe it
+        # carregue a imagem, converta-a em tons de cinza e descreva-a
         # print("test:", imagePath)
         image = cv2.imread(imagePath)
         try:
@@ -45,15 +45,15 @@ for p in par:
         except:
             print('ERROR di:', imagePath)
         hist = desc.describe(gray)
-        # extract the label from the image path, then update the
-        # label and data lists
-        # print(imagePath.split("/"))  # use "\\" in Windows
-        labels.append(imagePath.split("/")[-2])  # use "\\" in Windows
+        # extraia o rótulo do caminho da imagem e atualiza o
+        # rótulo e listas de dados
+        # print(imagePath.split("/"))  # use "\\" no Windows
+        labels.append(imagePath.split("/")[-2])  # use "\\" no Windows
         data.append(hist)
     #print(labels)
     X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.1, random_state=0)
 
-    # train a Linear KNN on the data
+    # treinar um KNN Linear nos dados
     k_nn = [0.005, 0.01, 0.015, 0.02]
     for k in k_nn:
         neigh = RadiusNeighborsClassifier(radius=k, outlier_label=0.1)
